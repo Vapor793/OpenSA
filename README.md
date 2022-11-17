@@ -5,7 +5,6 @@ Aiming at the common training datsets split, spectrum preprocessing, wavelength 
 <hr style=" border:solid; width:100px; height:1px;" color=#000000 size=1">
 
 
-![微信图片_20220522163336](https://user-images.githubusercontent.com/56440282/169686130-a8643a3d-4895-4620-8b8a-4e344a29f7dc.jpg)
 
 
 @[TOC](文章目录)
@@ -336,4 +335,4 @@ def Preprocessing(method, data):
 ![SNV](https://img-blog.csdnimg.cn/558d1c710da04519b72cab08da67e9cc.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBARWNob19Db2Rl,size_20,color_FFFFFF,t_70,g_se,x_16)
 # 总结
 <font color=#999AAA >利用OpenSA可以非常简单的实现对光谱的预处理，完整代码可从获得[GitHub仓库](https://github.com/FuSiry/OpenSA) 如果对您有用，请点赞！
-代码现仅供学术使用，若对您的学术研究有帮助，请引用本人的论文，同时，未经许可不得用于商业化应用，欢迎大家继续补充OpenSA中所涉及到的算法，如有问题，微信：Fu_siry
+代码现仅供学术使用，若对您的学术研究有帮助，请引用本人的论文，同时，未经许可不得用于商业化应用，欢迎大家继续补充OpenSA中所涉及到的算法
