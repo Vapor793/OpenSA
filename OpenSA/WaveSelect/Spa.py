@@ -78,7 +78,7 @@ class SPA:
             for i in range(N):
                 # 从测试集中 去除掉第 i 项
                 cal = np.hstack([np.arange(i), np.arange(i + 1, N)])
-                X = Xcal[cal, var_sel.astype(np.int)]
+                X = Xcal[cal, :][:, var_sel.astype(np.int)]
                 y = ycal[cal]
                 xtest = Xcal[i, var_sel]
                 # ytest = ycal[i]
