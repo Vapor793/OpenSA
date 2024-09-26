@@ -1,17 +1,23 @@
+import OpenSA
 from setuptools import setup, find_packages
 
+DISTNAME = 'OpenSA'
+DESCRIPTION = 'OpenSA'
+VERSION = OpenSA.__version__
+
 setup(
-    name = "OpenSA",
-    version = "0.1",
+    name = DISTNAME,
+    version = VERSION,
+    packages = find_packages(),
     install_requires=[
         'numpy',
         'scipy',
         'matplotlib',
         'pandas',
-        'scikit-learn'
+        'scikit-learn',
+        'deap',
         ],
-    packages = find_packages(),
     author = "SYF",
     author_email = "",
-    description = "OpenSA",
+    description = DESCRIPTION,
 )

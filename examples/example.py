@@ -11,15 +11,15 @@
 
 
 import numpy as np
-from DataLoad.DataLoad import SetSplit, LoadNirtest
-from Preprocessing.Preprocessing import Preprocessing
-from WaveSelect.WaveSelcet import SpctrumFeatureSelcet
+from OpenSA.DataLoad.DataLoad import SetSplit, LoadNirtest
+from OpenSA.Preprocessing.Preprocessing import Preprocessing
+from OpenSA.WaveSelect.WaveSelcet import SpctrumFeatureSelcet
 # from Plot.SpectrumPlot import plotspc
 # from Plot.SpectrumPlot import ClusterPlot
-from Simcalculation.SimCa import Simcalculation
-from Clustering.Cluster import Cluster
-from Regression.Rgs import QuantitativeAnalysis
-from Classification.Cls import QualitativeAnalysis
+from OpenSA.Simcalculation.SimCa import Simcalculation
+from OpenSA.Clustering.Cluster import Cluster
+from OpenSA.Regression.Rgs import QuantitativeAnalysis
+from OpenSA.Classification.Cls import QualitativeAnalysis
 
 #光谱聚类分析
 def SpectralClusterAnalysis(data, label, ProcessMethods, FslecetedMethods, ClusterMethods):
