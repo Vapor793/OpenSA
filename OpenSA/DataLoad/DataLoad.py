@@ -167,9 +167,9 @@ def ks(data, label, test_size=0.2):
 def LoadNirtest(type):
 
     if type == "Rgs":
-        CDataPath1 = './/Data//Rgs//Cdata1.csv'
-        VDataPath1 = './/Data//Rgs//Vdata1.csv'
-        TDataPath1 = './/Data//Rgs//Tdata1.csv'
+        CDataPath1 = '../Data/Rgs/Cdata1.csv'
+        VDataPath1 = '../Data/Rgs/Vdata1.csv'
+        TDataPath1 = '../Data/Rgs/Tdata1.csv'
 
         Cdata1 = np.loadtxt(open(CDataPath1, 'rb'), dtype=np.float64, delimiter=',', skiprows=0)
         Vdata1 = np.loadtxt(open(VDataPath1, 'rb'), dtype=np.float64, delimiter=',', skiprows=0)
@@ -181,7 +181,7 @@ def LoadNirtest(type):
         label = Nirdata[:, -1]
 
     elif type == "Cls":
-        path = './/Data//Cls//table.csv'
+        path = './Data/Cls/table.csv'
         Nirdata = np.loadtxt(open(path, 'rb'), dtype=np.float64, delimiter=',', skiprows=0)
         data = Nirdata[:, :-1]
         label = Nirdata[:, -1]
