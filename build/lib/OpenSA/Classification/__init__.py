@@ -1,3 +1,3 @@
-from .ClassicCls import *
+# from .ClassicCls import PLS_DA
 
-__all__ = ['ClassicCls']
+# __all__ = ['PLS_DA']

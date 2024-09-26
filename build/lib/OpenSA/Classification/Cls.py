@@ -9,9 +9,12 @@
 
 """
 
-from Classification.ClassicCls import ANN, SVM, PLS_DA, RF
-from Classification.CNN import CNN
-from Classification.SAE import SAE
+# from Classification.ClassicCls import ANN, SVM, PLS_DA, RF
+# from Classification.CNN import CNN
+# from Classification.SAE import SAE
+from .ClassicCls import ANN, SVM, PLS_DA, RF
+from .CNN import CNN
+from .SAE import SAE
 
 def  QualitativeAnalysis(model, X_train, X_test, y_train, y_test):
 

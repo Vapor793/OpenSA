@@ -9,12 +9,19 @@
 
 """
 
-from WaveSelect.Lar import Lar
-from WaveSelect.Spa import SPA
-from WaveSelect.Uve import UVE
-from WaveSelect.Cars import CARS_Cloud
-from WaveSelect.Pca import Pca
-from WaveSelect.GA import GA
+#from WaveSelect.Lar import Lar
+#from WaveSelect.Spa import SPA
+#from WaveSelect.Uve import UVE
+#from WaveSelect.Cars import CARS_Cloud
+#from WaveSelect.Pca import Pca
+#from WaveSelect.GA import GA
+
+from .Lar import Lar
+from .Spa import SPA
+from .Uve import UVE
+from .Cars import CARS_Cloud
+from .Pca import Pca
+from .GA import GA
 from sklearn.model_selection import train_test_split
 
 def SpctrumFeatureSelcet(method, X, y):

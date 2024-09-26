@@ -9,8 +9,8 @@
 
 """
 
-from Regression.ClassicRgs import Pls, Anngression, Svregression, ELM
-from Regression.CNN import CNNTrain
+from ..Regression.ClassicRgs import Pls, Anngression, Svregression, ELM
+from ..Regression.CNN import CNNTrain
 
 def  QuantitativeAnalysis(model, X_train, X_test, y_train, y_test):
 
