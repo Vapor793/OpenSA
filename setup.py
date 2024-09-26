@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name = "OpenSA",
     version = "0.1",
-    requires=[
+    install_requires=[
         'numpy',
         'scipy',
         'matplotlib',
