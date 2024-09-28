@@ -12,6 +12,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib import font_manager as fm, rcParams
+import sklearn
 from sklearn.cross_decomposition import PLSRegression
 from sklearn.model_selection import KFold
 from sklearn.metrics import mean_squared_error
@@ -108,7 +109,10 @@ def CARS_Cloud(X, y, N=50, f=20, cv=10):
 
         pls = PLSRegression(n_components=f)
         pls.fit(xcal, ycal)
-        beta = pls.coef_
+        if sklearn.__version__ > '1.2.2':
+            beta = pls.coef_.T
+        else:
+            beta = pls.coef_
         b = np.abs(beta)
         b2 = np.argsort(-b, axis=0)
         coef = copy.deepcopy(beta)
