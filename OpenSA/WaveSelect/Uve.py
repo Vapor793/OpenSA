@@ -54,7 +54,7 @@ class UVE:
             ytrain = self.y[train]
             plsModel = PLSRegression(min([self.ncomp, rank(xtrain)]))
             plsModel.fit(xtrain, ytrain)
-            PLSCoef[step, :] = plsModel.coef_.T
+            PLSCoef[step, :] = plsModel.coef_.T.reshape(-1)
             step += 1
         meanCoef = np.mean(PLSCoef, axis=0)
         stdCoef = np.std(PLSCoef, axis=0)
