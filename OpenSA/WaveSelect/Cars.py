@@ -19,6 +19,7 @@ from sklearn.metrics import mean_squared_error
 import copy
 
 # ref: https://blog.csdn.net/qq2512446791
+np.random.seed(0)
 
 def PC_Cross_Validation(X, y, pc, cv):
     '''
