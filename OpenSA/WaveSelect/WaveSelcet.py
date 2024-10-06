@@ -59,4 +59,4 @@ def SpctrumFeatureSelcet(method, X, y):
     else:
         print("no this method of SpctrumFeatureSelcet!")
 
-    return X_Feature, y
+    return X_Feature, y, Featuresecletidx
