@@ -1,20 +1,3 @@
-"""
-    -*- coding: utf-8 -*-
-    @Time   :2022/04/12 17:10
-    @Author : Pengyou FU
-    @blogs  : https://blog.csdn.net/Echo_Code?spm=1000.2115.3001.5343
-    @github : https://github.com/FuSiry/OpenSA
-    @WeChat : Fu_siry
-    @License：Apache-2.0 license
-
-"""
-
-#from WaveSelect.Lar import Lar
-#from WaveSelect.Spa import SPA
-#from WaveSelect.Uve import UVE
-#from WaveSelect.Cars import CARS_Cloud
-#from WaveSelect.Pca import Pca
-#from WaveSelect.GA import GA
 import numpy as np
 from .Lar import Lar
 from .Spa import SPA
