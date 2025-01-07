@@ -23,8 +23,6 @@ import matplotlib.pyplot  as plt
 LR = 0.001
 BATCH_SIZE = 16
 TBATCH_SIZE = 240
-
-
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 #自定义加载数据集
@@ -81,15 +79,11 @@ def ZspPocessnew(X_train, X_test, y_train, y_test, need=True): #True:需要标�
 
         return data_train, data_test
 
-
-
-
 def CNNTrain(NetType, X_train, X_test, y_train, y_test, EPOCH):
 
 
     data_train, data_test = ZspPocessnew(X_train, X_test, y_train, y_test, need=True)
     # data_train, data_test = ZPocess(X_train, X_test, y_train, y_test)
-
     train_loader = torch.utils.data.DataLoader(data_train, batch_size=BATCH_SIZE, shuffle=True)
     test_loader = torch.utils.data.DataLoader(data_test, batch_size=TBATCH_SIZE, shuffle=True)
 
