@@ -1,6 +1,6 @@
+import hpelm
 from sklearn.cross_decomposition import PLSRegression
 from sklearn.neural_network import MLPRegressor
-import hpelm
 from ..Evaluate.RgsEvaluate import ModelRgsevaluate
 from sklearn.svm import SVR
 
