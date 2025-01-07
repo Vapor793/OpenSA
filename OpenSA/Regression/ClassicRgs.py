@@ -1,7 +1,6 @@
-
 from sklearn.cross_decomposition import PLSRegression
 from sklearn.neural_network import MLPRegressor
-# import hpelm
+import hpelm
 
 """
     -*- coding: utf-8 -*-
