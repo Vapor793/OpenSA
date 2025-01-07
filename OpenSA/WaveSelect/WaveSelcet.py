@@ -56,8 +56,9 @@ def SpctrumFeatureSelcet(method, X, y):
         X_Feature = X[:, Featuresecletidx]
     elif method == "Pca":
         X_Feature = Pca(X)
-        Featuresecletidx = [i for i in range(10)]
+        Featuresecletidx = None
     else:
         print("no this method of SpctrumFeatureSelcet!")
 
     return X_Feature, y, Featuresecletidx
+    x_pca, y_pca,slcidx = SpctrumFeatureSelcet("Pca", x_pca, y_pca)
