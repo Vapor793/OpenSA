@@ -15,7 +15,7 @@
 #from WaveSelect.Cars import CARS_Cloud
 #from WaveSelect.Pca import Pca
 #from WaveSelect.GA import GA
-
+import numpy as np
 from .Lar import Lar
 from .Spa import SPA
 from .Uve import UVE
@@ -56,7 +56,7 @@ def SpctrumFeatureSelcet(method, X, y):
         X_Feature = X[:, Featuresecletidx]
     elif method == "Pca":
         X_Feature = Pca(X)
-        Featuresecletidx = []
+        Featuresecletidx = np.random.rand(X.shape[1])
     else:
         print("no this method of SpctrumFeatureSelcet!")
 
