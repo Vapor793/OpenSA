@@ -19,7 +19,6 @@ from datetime import datetime
 from ..Evaluate.RgsEvaluate import ModelRgsevaluate, ModelRgsevaluatePro
 import matplotlib.pyplot  as plt
 
-
 LR = 0.001
 BATCH_SIZE = 16
 TBATCH_SIZE = 240
@@ -37,8 +36,6 @@ class MyDataset(Dataset):
 
     def __len__(self):
         return len(self.specs)
-
-
 
 ###定义是否需要标准化
 def ZspPocessnew(X_train, X_test, y_train, y_test, need=True): #True:需要标准化，Flase：不需要标准化
