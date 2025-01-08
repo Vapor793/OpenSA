@@ -30,9 +30,7 @@ def SpctrumFeatureSelcet(method, X, y):
         Featuresecletidx = Uve.cutFeature(X)
         X_Feature = Featuresecletidx[0]
     elif method == "Spa":
-        Xcal, Xval, ycal, yval = train_test_split(X, y, test_size=0.2)
-        Featuresecletidx = SPA().spa(
-            Xcal= Xcal, ycal=ycal, m_min=8, m_max=50, Xval=Xval, yval=yval, autoscaling=1)
+        Featuresecletidx = SPA(X, 50)
         X_Feature = X[:, Featuresecletidx]
     elif method == "GA":
         Featuresecletidx = GA(X, y, 10)
